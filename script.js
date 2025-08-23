@@ -1,3 +1,4 @@
+document.body.classList.add("hide-bg");
 
 document.querySelector(".add").addEventListener("click", () => {
     document.body.classList.remove("show-bg");
