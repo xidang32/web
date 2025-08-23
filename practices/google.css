@@ -1,0 +1,23 @@
+
+img {
+    width: 200px;
+    margin: 10px;
+}
+
+.center {
+    text-align: center;
+}
+
+input {
+    border: none;
+    border-radius: 30px;
+    padding: 12px 16px;
+    width: 500px;
+    height: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    text-align: right;
+    margin-bottom: 200px;
+}

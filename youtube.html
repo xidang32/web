@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Youtube</title>
+        <style>
+            .thumbnail {
+                width: 60px;
+                height: 60px;
+                object-fit: cover;
+                object-position: left;
+                border-radius: 35px;
+                vertical-align: middle;
+                margin-left: 100px;
+            }
+            .thumbnail:hover {
+                cursor: pointer;
+            }
+            .search-bar {
+                border: none;
+                font-size: 20px;
+                margin-left: 20px;
+                border-radius: 100px;
+                padding: 12px 50px;
+                display: inline-block;
+                
+            }
+            .tweet-button {
+                border: none;
+                background-color: rgb(29, 155, 240);
+                color: white;
+                font-size: 15px;
+                font-weight: bold;
+                margin-left: 20px;
+
+                padding-left: 18px;
+                padding-right: 18px;
+                padding-top: 9px;
+                padding-bottom: 9px;
+                border-radius: 20px;
+
+                display: inline-block;
+                transition: box-shadow 0.2s, background-color 0.2s;
+            }
+            .tweet-button:hover {
+                cursor: pointer;
+                box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.2);
+            }
+            .tweet-button:active {
+                transform: scale(0.97);
+
+            }
+        </style>
+    </head>
+    <body>
+        <a href="https://chatgpt.com/"><img class="thumbnail" src="thumbnails/thumbnail-6.webp"></a>
+        <input class="search-bar" type="text" placeholder="What's happening?">
+        <button class="tweet-button">Tweet</button>
+    </body>
+</html>
