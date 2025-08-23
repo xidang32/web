@@ -1,3 +1,9 @@
+.thumbnail {
+  width: 200px;    /* size of thumbnail */
+  height: auto;    /* keeps aspect ratio */
+  margin-bottom: 20px;
+}
+
 body {
     display: flex;
     align-items: center;
