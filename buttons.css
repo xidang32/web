@@ -1,114 +1,115 @@
+/* ---------- Base ---------- */
 html, body {
-    background: transparent;
+    font-family: "Borel", cursive;
+    background: black;
+    margin: 0;
+    padding: 0;
+
+    overflow-x: hidden;
+    scroll-padding-top: 75px;
+    scroll-behavior: smooth;
 }
 
-body {
-    font-family: "Borel", cursive;
+/* ---------- Parallax background ---------- */
+.body-bg {
+    background-image: url("thumbnails/khoibeta2.png");
+    background-repeat: no-repeat;
+    background-position: center 0;
+
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    top: -70px;
+
+    will-change: transform;
+    transform: translateY(0);
+    pointer-events: none;
+}
+/* Hide background for top and bottom*/
+.hide-bg-top {
+    display: block;
+    background-color: black;
+    position: relative;
+    height: 75px;
+    z-index: 1;
+}
+
+/* ---------- Navbar ---------- */
+.head-page {
+    position: fixed;
+    padding-left: 30px;
+    padding-top: 5px;
+
+    display: flex;
+    align-items: center;
+
+    height: 70px;
+    width: 100%;
+    z-index: 1000;
+
+    background-color: rgba(40,40,40,0.8);
+}
+
+.menu-link {
+    font-size: 24px;
+    font-weight: 12px;
+    text-decoration: none;
+
+    color: white;
+    margin: 0;
+    line-height: 1;
+}
+
+/* ---------- Sections ---------- */
+main {
+    position: relative;
+    z-index: 1;
+}
+
+.section,.section--dark {
+    min-height: 80vh;
+    padding: 24px;
+    background-color: #faf0e6;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-}
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    background-image: url("thumbnails/khoibeta2.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 1;
-    z-index: 0;
+
 }
 
-@keyframes bounceIn {
-    0%   { opacity: 0; transform: scale(0.3); }
-    50%  { opacity: 1; transform: scale(1.3); }
-    70%  { transform: scale(0.8); }
-    100% { transform: scale(1); }
+.section--dark {
+    background: transparent;
+    color: white;
 }
 
-@keyframes rotateOut {
-    0%   { opacity: 1; transform: rotate(0deg) scale(1); }
-    100% { opacity: 0; transform: rotate(359deg) scale(0.5); }
-}
-
-body.show-bg::before {
-    animation: bounceIn 3.5s ease forwards;
-}
-
-body.hide-bg::before {
-    animation: rotateOut 2s ease forwards;
-}
-
-.container {
-    position: relative;
-    z-index: 1;
-    background-color: rgba(255, 255, 255, 0.3);
-    border: 2px solid black;
-    border-radius: 30px;
-    padding: 20px;
-    text-align: left;
-}
-
-.name,.link,.price {
-    display: block;
-}
-.link {
-    color: rgb(0, 113, 133);
-}
-
-.link:hover {
-    color: orange;
-}
-
+/* Text content */
 .name {
-    align-items: center;
     font-size: 35px;
     font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+/* -------- Bottom page -------- */
+.bot-page {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    height: 75px;
     width: 100%;
+    position: relative;
+    background: black;
 }
 
-.price {
-    color: rgb(0, 118, 0);
-}
+.bot-link {
+    padding-right: 30px;
 
-button {
-    font-family: "Borel", cursive;
-    padding-top: 10px;
-    height: 35px;
-    width: 46%;
-    border: none;
-    border-radius: 20px;
-}
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
 
-.add {
-    background-color: rgb(255, 216, 20) ;
-    transition: opacity 0.2s, scale 0.2s;
-    margin-right: 6%;
-    }
-
-.add:hover {
-    cursor: pointer;
-}
-
-.add:active {
-    opacity: 0.5;
-    scale: 0.95;
-}
-
-.buy {
-    background-color: rgb(255, 164, 28) ;
-    transition: opacity 0.2s, scale 0.2s;
-}
-
-.buy:hover {
-    cursor: pointer;
-}
-
-.buy:active {
-    opacity: 0.5;
-    scale: 0.95;
+    color: white;
+    margin: 0;
+    line-height: 1;
 }

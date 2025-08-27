@@ -1,11 +1,13 @@
-document.body.classList.add("hide-bg");
+// Parallax background
+const bg = document.querySelector('.body-bg');
+const speed = 0.3;
 
-document.querySelector(".add").addEventListener("click", () => {
-    document.body.classList.remove("show-bg");
-    document.body.classList.add("hide-bg");
-});
+function onScroll() {
+    const y = window.scrollY;
 
-document.querySelector(".buy").addEventListener("click", () => {
-    document.body.classList.remove("hide-bg");
-    document.body.classList.add("show-bg");
-});
+    // Make the bg flow slower than the actual site
+    bg.style.transform = `translateY(${y * speed}px)`;
+}
+
+addEventListener('scroll', onScroll, { passive: true });
+addEventListener('load', onScroll);

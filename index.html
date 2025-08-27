@@ -1,25 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" type="image/png" href="thumbnails/khoibeta2.png">
-        <title>First website</title>
-        <link rel="stylesheet" href="buttons.css">
+        <title>Cafe temp website</title>
+
+        <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Borel&family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap" rel="stylesheet">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="buttons.css">
     </head>
 
     <body>
-        <div class="container">
-            <a class ="link" href="https://www.amazon.ca/">Back to amazon</a>
-            <a class="name">Khôi bêta patê</a>
-            <a class="price">$500</a>
-            <button class ="add">Hell nah bruh</button>
-            <button class ="buy">Buy now?</button>
-            <script src="script.js"></script>
+    <!-- Navbar -->
+        <div class="head-page">
+            <div class="head-content">
+                <a class="menu-link" href="#home">Menu</a>
+            </div>
+
+    <!-- Parallax background layer -->
         </div>
+            <div class="body-bg" aria-hidden="true"></div>
+            <div class="hide-bg-top" aria-hidden="true"></div>
+    <!-- Content -->
+        <main id="home">
+            <section class="section">
+                <a class="name">Khôi bêta patê</a>
+            </section>
+            <section class="section--dark">
+                <p class="name">- Khôi bêta patê -</p>
+            </section>
+            <section class="section">
+                <p class="name">bêta patê</p>
+            </section>
+        </main>
+
+    <!-- Bottom page -->
+        <footer class="bot-page">
+            <div class="bottom-content">
+                <a class="bot-link" href="#home">Back to the top &uarr;</a>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
     </body>
 </html>
 
