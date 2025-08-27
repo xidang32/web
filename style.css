@@ -68,7 +68,7 @@ main {
 }
 
 .section,.section--dark {
-    min-height: 80vh;
+    min-height: 100vh;
     padding: 24px;
     background-color: #faf0e6;
 
