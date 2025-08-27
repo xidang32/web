@@ -15,11 +15,12 @@ html, body {
     background-image: url("thumbnails/chanpet.png");
     background-repeat: no-repeat;
     background-position: center 0;
+    background-size: 50%;
 
     position: fixed;
     inset: 0;
     z-index: 0;
-    top: -70px;
+    top: -20%px;
 
     will-change: transform;
     transform: translateY(0);
